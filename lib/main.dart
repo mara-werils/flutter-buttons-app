@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Флаттер тыкалка'),
     );
   }
 }
@@ -39,13 +39,12 @@ class _MyHomePageState extends State<MyHomePage> {
   // Список фраз
   final List<String> _phrases = [
     "Привет, мир!",
-    "Как дела?",
-    "Flutter — крутой!",
+    "КД, ЧД?!",
     "Ты нажал кнопку!",
-    "Продолжай нажимать!",
-    "Новый день — новые идеи!",
-    "Вперёд к коду!",
-    "Здравствуй, разработчик!",
+    "Продолжай тыкать!",
+    "Еще раз нажми!",
+    "Вай красавчик!",
+    "Последняя фраза!",
   ];
 
   void _incrementCounter() {
@@ -102,17 +101,17 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _changeText,
-              child: const Text("Изменить текст"),
+              child: const Text("Тыкалка текста"),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: _changeBackgroundColor,
-              child: const Text("Сменить цвет фона"),
+              child: const Text("Тыкалка фона"),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: _resetCounter,
-              child: const Text("Сбросить счётчик"),
+              child: const Text("Reset"),
             ),
           ],
         ),
